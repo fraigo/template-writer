@@ -1,0 +1,26 @@
+{
+  "name": "template-writer",
+  "version": "1.0.0",
+  "description": "Simple template writer to generate files from templates and variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraigo/template-writer.git"
+  },
+  "keywords": [
+    "template",
+    "writer",
+    "html5",
+    "packer",
+    "generator"
+  ],
+  "author": "Francisco Igor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fraigo/template-writer/issues"
+  },
+  "homepage": "https://github.com/fraigo/template-writer#readme"
+}
