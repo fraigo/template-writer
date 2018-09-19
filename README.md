@@ -16,6 +16,9 @@ writer(
 );
 ```
 
+In this example, it will take a template file located in `templates/index.html`, replace variables in the file (with format `${variableName}`) with values specified in the `vars` parameter (in this case, `title`). The resulting file will be written to ./index.html.
+
+
 ## Default config
 
 By default, the component reads from a `'templates'` folder and writes to the current directory (`'.'`)
@@ -25,4 +28,6 @@ By default, the component reads from a `'templates'` folder and writes to the cu
   targetDir:'.'
 }
 ```
+
+
 
