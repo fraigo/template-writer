@@ -12,7 +12,7 @@ var writer = require('template-writer');
 writer(
   'index.html',
   {title:'Page title'},
-  {templateDir:'templates',targetDir:'dist'}
+  {templateDir:'templates',targetDir:'dist',baseDir:__filename}
 );
 ```
 
@@ -26,8 +26,14 @@ By default, the component reads from a `'templates'` folder and writes to the cu
 {
   templateDir:'templates',
   targetDir:'.'
+  baseDir:'.' //path of node module (./node_modules/template-writer/)
 }
 ```
 
 
+## Test npm package
+
+Use RunKit to test this package:
+
+https://runkit.com/embed/snmoc7obotip
 
