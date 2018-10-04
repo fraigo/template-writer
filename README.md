@@ -100,10 +100,20 @@ By default, the component reads from a `'templates'` folder and writes to the cu
 ```
 {
   templateDir:'templates',
+<<<<<<< HEAD
   targetDir:TEMPLATE_WRITER_NODE_MODULE_FOLDER
+=======
+  targetDir:'.'
+  baseDir:'.' //path of node module (./node_modules/template-writer/)
+>>>>>>> b4073ebb0f12c07a31d7b541cf576b08657dfdf6
 }
 ```
 
 
+## Test npm package
+
+Use RunKit to test this package:
+
+https://runkit.com/embed/snmoc7obotip
 
 
