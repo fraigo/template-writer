@@ -53,14 +53,12 @@ In the `vars` section, every variable defined will be embedded in the template w
 In the `replacements`, you can specify a list of expressions (regular expressions) to replace with content.
 
 ```javascript
-var values = {
-  vars: {
+var vars = {
     title: 'My Page',
     content: fs.readFileSync('./templates/content.html', 'utf8');
-  },
-  replacements:{
-
   }
+var replacements = {
+
 }
 ```
 
@@ -81,11 +79,12 @@ Create the `config` using the following parameters:
 var config = {
     name: 'index.html',
     target:'index.html',
-    vars: values
+    vars: vars,
+    replacements: replacements
   }
 
-var writer = require('template-writer');
-writer(
+var templateWriter = require('template-writer');
+templateWriter(
   config,
   templateOptions
 );
@@ -110,5 +109,4 @@ By default, the component reads from a `'templates'` folder and writes to the cu
 
 Use RunKit to test this package:
 
-https://runkit.com/embed/8j94b33o226c
-
+https://runkit.com/fraigo/5bca950c3b24aa0012bbc131
