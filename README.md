@@ -99,13 +99,9 @@ In this example, will be writing  `./index.html` from `./templates/index.html` u
 By default, the component reads from a `'templates'` folder and writes to the current directory (`'.'`)
 ```
 {
-  templateDir:'templates',
-<<<<<<< HEAD
-  targetDir:TEMPLATE_WRITER_NODE_MODULE_FOLDER
-=======
-  targetDir:'.'
+  templateDir: 'templates',
+  targetDir: '.' //path of module 
   baseDir:'.' //path of node module (./node_modules/template-writer/)
->>>>>>> b4073ebb0f12c07a31d7b541cf576b08657dfdf6
 }
 ```
 
@@ -114,6 +110,5 @@ By default, the component reads from a `'templates'` folder and writes to the cu
 
 Use RunKit to test this package:
 
-https://runkit.com/embed/snmoc7obotip
-
+https://runkit.com/embed/8j94b33o226c
 
